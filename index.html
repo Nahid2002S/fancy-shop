@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aqua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-lg px-8">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">Fancy Shoes</a>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                  </div>
+                </label>
+                <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                  <div class="card-body">
+                    <span class="font-bold text-lg">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <section class="mt-8">
+        <h1 class="text-4xl text-center font-bold mb-6">Get Premium Shoes</h1>
+     <div class="md:flex">
+        <div class="px-4 grid md:grid-cols-3 gap-4 md:w-[70%]">
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img src="images/shoe1.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="first-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Price: $<span id="first-price">110</span></p>
+                  <p>Quantity: $<span id="first-quantity">5</span></p>
+                  <div class="card-actions justify-end">
+                    <button id="first-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img src="images/shoe2.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="second-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Price: $<span id="second-price">120</span></p>
+                  <p>Quantity: $<span id="second-quantity">4</span></p>
+                  <div class="card-actions justify-end">
+                    <button id="second-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img src="images/shoe3.webp" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="third-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Price: $<span id="third-price">180</span></p>
+                  <p>Quantity: $<span id="third-quantity">3</span></p>
+                  <div class="card-actions justify-end">
+                    <button id="third-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img src="images/shoe4.webp" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="fourth-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Price: $<span id="fourth-price">160</span></p>
+                  <p>Quantity: $<span id="fourth-quantity">6</span></p>
+                  <div class="card-actions justify-end">
+                    <button id="fourth-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure><img src="images/shoe5.webp" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="fifth-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Price: $<span id="fifth-price">140</span></p>
+                  <p>Quantity: $<span id="fifth-quantity">8</span></p>
+                  <div class="card-actions justify-end">
+                    <button id="fifth-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-full bg-base-100 shadow-xl mb-4">
+                <figure><img src="images/shoe6.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="sixth-name" class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <input id="sixth-price" type="text" placeholder="Price" class="input input-bordered input-sm w-full max-w-xs" />
+                  <input id="sixth-quantity" type="text" placeholder="Quantity" class="input input-bordered input-sm w-full max-w-xs" />
+                  <div class="card-actions justify-end">
+                    <button id="sixth-btn" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="md:w-[30%]">
+            <h1 class="text-center text-3xl font-bold underline mb-4">Shoping List</h1>
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-container">
+                    
+                  </tbody>
+                </table>
+                <button id="total-btn" class="btn btn-primary mt-8 mb-4">Total Cost</button>
+              </div>
+        </div>
+     </div>
+    </section>
+    
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
